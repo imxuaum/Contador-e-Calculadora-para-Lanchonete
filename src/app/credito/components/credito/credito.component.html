@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Somar</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" readonly [value]="pegaValor">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <button class="btn btn-danger" (click)="calcula(5,1)">Lanches R$ 5</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-danger" (click)="calcula(4,2)">Bebidas R$ 4</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-danger" (click)="calcula(3,3)">Doce R$ 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" readonly [value]="pegaLanche">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" readonly [value]="pegaBebida">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" readonly [value]="pegaDoce">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
