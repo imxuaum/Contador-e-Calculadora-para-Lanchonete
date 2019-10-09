@@ -45,7 +45,7 @@ export class CreditoComponent implements OnInit {
     return this.bebida;
   }
   get pegaDoce(){
-    return this.lanche;
+    return this.doce;
   }
 
 }
